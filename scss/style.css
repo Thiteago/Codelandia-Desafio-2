@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/*Variáveis*/
+:root {
+  --bgSite: #f6f6f6;
+  --bgCard: #ebe9ea;
+  --white: #fff;
+  --title: #181818;
+  --text: #474747;
+}
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input {
+  border: 0;
+}
+
+button:focus,
+input:focus {
+  border: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .header-promo {
+  background: var(--title);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 31px;
+  font-weight: 500;
+  color: var(--bgSite);
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-title {
+  height: 60px;
+  background: var(--bgSite);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-presentation {
+  height: 380px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.section-presentation .image-background {
+  position: absolute;
+  background-image: url(/assets/img/wallpaper.jpeg);
+  background-position-y: -140px;
+  background-repeat: no-repeat;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+  background-attachment: initial;
+  background-size: cover;
+  height: 378px;
+  width: 100%;
+  z-index: 0;
+}
+
+.section-presentation .title {
+  position: relative;
+  z-index: 2;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--bgSite);
+  padding: 129px 0 20px 100px;
+}
+
+.section-presentation .text {
+  z-index: 3;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--bgSite);
+  font-weight: 50;
+  font-size: 18px;
+  line-height: 35px;
+  width: 550px;
+  padding: 0 0 210px 100px;
+}
+
+.section-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-products .title {
+  padding-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 62px;
+}
+
+.section-products .text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.section-products .container-products {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 13px;
+  padding-top: 60px;
+  margin: 0px 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-products .container-products .product {
+  background: var(--bgCard);
+  height: 300px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer {
+  background: var(--title);
+  text-align: center;
+  margin-top: 100px;
+}
+
+.footer .text {
+  padding: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  color: var(--bgSite);
+}
+/*# sourceMappingURL=style.css.map */
