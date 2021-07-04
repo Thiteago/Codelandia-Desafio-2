@@ -175,7 +175,7 @@ input:focus {
 
 @media (min-width: 0px) and (max-width: 540px) {
   .section-presentation .container-text {
-    padding-left: 0px;
+    padding-left: 10px;
   }
 }
 
